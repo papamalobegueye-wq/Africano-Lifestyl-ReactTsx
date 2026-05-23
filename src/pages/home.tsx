@@ -5,10 +5,13 @@ import ProductCard from '../components/ProductCard'
 import BestSeller from '../components/BestSeller'
 import { ProductSellers } from '../data/productSellers'
 import Deal  from '../components/Deal'
+import TemoignageComponent from '../components/Temoignage'
+import InstagramCompponent from '../components/Instagram'
+
 
 export default function HomePage() {
   return (
-        <div className="m-5">
+        <div className="">
             <Hero />
             
             <div className="produit">
@@ -25,6 +28,10 @@ export default function HomePage() {
             <BestSeller productSellers={ProductSellers} />
 
             <Deal />
+
+            <TemoignageComponent />
+
+            <InstagramCompponent />
 
         </div>
     )

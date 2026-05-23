@@ -18,6 +18,7 @@ export const ProductSellers: ProductSeller[] = [
         category: "Collection Privé" ,
         prix: 40000,
         isNew: true,
+        color:["red", "black", "green"]
     },
     {
         id: 2,

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { type ProductSeller } from '../types/productSeller';
 
 type BestSellerProps = {
@@ -13,9 +14,10 @@ export default function BestSeller({ productSellers }: BestSellerProps) {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
 
-                {productSellers.map((seller) => (
+                {productSellers.slice(0, 4).map((seller) => (
 
-                    <article
+                    <Link
+                    to={`shop/${seller.id}`}
                         key={seller.id}
                         className="relative flex flex-col overflow-hidden rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300 bg-white"
                     >
@@ -46,7 +48,7 @@ export default function BestSeller({ productSellers }: BestSellerProps) {
                             </p>
                         </div>
 
-                    </article>
+                    </Link>
                 ))}
 
             </div>

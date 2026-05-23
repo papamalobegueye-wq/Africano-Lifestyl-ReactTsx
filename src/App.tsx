@@ -9,6 +9,7 @@ import RegisterPage from "./pages/auth/register";
 import DashboardLayout from "./layout/dashboard-Layout";
 import ProfilPage from "./pages/dashboard/profil";
 import FavoryPage from "./pages/dashboard/favory";
+import DetailShop from "./pages/detail-shop";
 
 export default function App() {
   return (
@@ -19,6 +20,8 @@ export default function App() {
           <Route index element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="shop" element={<ShopPage />} />
+          <Route path="shop/:id" element={<DetailShop />} />
+
         </Route>
 
         {/* Authentification Routes */}

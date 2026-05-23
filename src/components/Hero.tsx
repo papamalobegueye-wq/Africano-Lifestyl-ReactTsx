@@ -15,7 +15,7 @@ export default function Hero() {
                     Shop Now <FaLongArrowAltRight />
                 </button>
                 <p className="hidden md:block absolute z-10 text-[150px] font-bold uppercase tracking-[22px] 
-                text-[#c8c8c8] whitespace-nowrap pointer-events-none opacity-50 select-none mt-65 left-[15%] 
+                text-[#c8c8c8] whitespace-nowrap pointer-events-none opacity-50 select-none mt-65 left-[13%] 
                 italic h-40 -translate-y-1/2">
                 best selle</p>
 
@@ -23,7 +23,7 @@ export default function Hero() {
 
             <div className="relative flex items-center justify-center">
                 
-                <div className="relative z-11 w-120 h-120 bg-cover bg-center "
+                <div className="relative z-11 w-74 h-74 md:w-120 md:h-120 bg-cover bg-center "
                     style={{ backgroundImage: `url(${pin27})` }}
                 />
             </div>

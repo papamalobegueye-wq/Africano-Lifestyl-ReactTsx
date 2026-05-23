@@ -1,14 +1,13 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default function HomeLayout() {
   return (
-    <div className="">
+    <div className="m-5">
       <Navbar />
       <Outlet />
-      <div className="bg-black font-jost font-bold w-full h-100 flex items-center justify-center text-white text-2xl ">
-        FOOTER
-      </div>
+      <Footer/>
     </div>
-  );
+  )
 }
