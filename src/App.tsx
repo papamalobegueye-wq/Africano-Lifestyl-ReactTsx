@@ -10,10 +10,13 @@ import DashboardLayout from "./layout/dashboard-Layout";
 import ProfilPage from "./pages/dashboard/profil";
 import FavoryPage from "./pages/dashboard/favory";
 import DetailShop from "./pages/detail-shop";
+import ForgetPassword from "./pages/auth/forgetPassword";
+import { Toaster } from 'sonner'
 
 export default function App() {
   return (
     <BrowserRouter>
+    <Toaster position="top-right" richColors  />
       <Routes>
         {/* Accueil Routes */}
         <Route path="/" element={<HomeLayout />}>
@@ -28,6 +31,7 @@ export default function App() {
         <Route path="/auth" element={<AuthLayout />}>
           <Route path="login" element={<LoginPage />} />
           <Route path="register" element={<RegisterPage />} />
+          <Route path="forgetPassword" element={<ForgetPassword />}/>
         </Route>
 
         {/* Dashboard Routes */}

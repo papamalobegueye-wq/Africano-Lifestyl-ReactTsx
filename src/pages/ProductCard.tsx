@@ -3,16 +3,16 @@ import { type Product } from "../types/product";
 type Props = {
     product: Product
 }
-
+;
 
 export default function ProductCard({ product }: Props) {
   return (
     <section className="product-Card">
         
-        <article className="relative flex flex-col h-96 overflow-hidden rounded-xl border
+        <article className="relative flex flex-col h-80 overflow-hidden rounded-xl border
         border-slate-200 shadow-sm hover:shadow-md">
 
-                <div className="relative overflow-hidden h-96 w-full group">
+                <div className="relative overflow-hidden h-80 w-full group">
             
                     <img 
                         src={product.image} 

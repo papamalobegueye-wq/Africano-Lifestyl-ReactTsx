@@ -10,11 +10,12 @@ export default function Deal() {
     minutes: 0,
     seconds: 0,
   });
+  
 
   // Ici tu colles le bloc useEffect avec le setInterval que je t'ai fourni
   useEffect(() => {
     // Fixe une date de fin (ex: dans 15 jours)
-    const targetDate = new Date("2026-06-01T00:00:00").getTime();
+    const targetDate = new Date("2026-07-01T00:00:00").getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();

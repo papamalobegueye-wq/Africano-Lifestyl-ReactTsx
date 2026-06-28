@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, Outlet } from "react-router-dom";
 
 export default function DashboardLayout() {
@@ -12,7 +11,8 @@ export default function DashboardLayout() {
 
       <div className="flex-1  h-screen">
         <Outlet />
+        
       </div>
     </div>
-  );
+  )
 }

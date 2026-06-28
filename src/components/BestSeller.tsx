@@ -14,7 +14,7 @@ export default function BestSeller({ productSellers }: BestSellerProps) {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
 
-                {productSellers.slice(0, 4).map((seller) => (
+                {productSellers.slice(0, 8).map((seller) => (
 
                     <Link
                     to={`shop/${seller.id}`}
@@ -22,12 +22,13 @@ export default function BestSeller({ productSellers }: BestSellerProps) {
                         className="relative flex flex-col overflow-hidden rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300 bg-white"
                     >
 
-                        <div className="relative h-72 w-full overflow-hidden">
+                        <div className="relative h-96 w-full overflow-hidden">
                             <img
                                 src={seller.image}
                                 alt={seller.nom}
-                                className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
+                                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
                             />
+
 
                             <span className="absolute top-2 left-2 bg-black/60 text-white text-xs font-medium px-2 py-0.5 rounded-full backdrop-blur-sm">
                                 {seller.category}
@@ -43,6 +44,7 @@ export default function BestSeller({ productSellers }: BestSellerProps) {
                             <h3 className="text-sm font-semibold font-bebas line-clamp-2 leading-tight">
                                  {seller.nom}
                             </h3>
+                            <p className='text-sm '>{seller.description}</p>
                             <p className="text-sm font-bold text-orange-500">
                                 {seller.prix.toLocaleString('fr-FR')} FCFA
                             </p>

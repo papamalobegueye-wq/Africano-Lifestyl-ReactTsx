@@ -9,11 +9,6 @@ export default function Navbar() {
   return (
     <nav className="flex items-center justify-between px-10 mb-5 pt-1.5 md:pt-5">
       <div className="">
-        {/* <img
-          src={logoEcomVanguard}
-          alt="logo"
-          className="h-full object-contain"
-        /> */}
         <h1 className="text-xl md:text-2xl font-jost font-bold uppercase"> lifestyl'</h1>
       </div>
 
