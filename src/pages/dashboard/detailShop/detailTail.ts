@@ -1,0 +1,1 @@
+export type DetailType = "description" | "additional" | "review"

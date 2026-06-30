@@ -22,9 +22,8 @@ export default function TemoignageComponent() {
                 className="bg-white p-6 rounded-xl border border-slate-100 
                 shadow-sm flex flex-col justify-between">
                         <div className=" text-amber-400 mb-4">
-                            <span>*</span><span>*</span><span>*</span><span>*</span><span>*</span>
-
-                            <p className="text-sm text-slate-600 leading-relaxed italic">
+                            <span>{item.rating}</span>
+                            <p className="text-sm text-slate-600 leading-relaxed pt-4 italic">
                                 {item.commentaire}
                             </p>
                         </div>

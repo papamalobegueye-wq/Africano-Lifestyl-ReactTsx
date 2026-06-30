@@ -9,7 +9,7 @@ import RegisterPage from "./pages/auth/register";
 import DashboardLayout from "./layout/dashboard-Layout";
 import ProfilPage from "./pages/dashboard/profil";
 import FavoryPage from "./pages/dashboard/favory";
-import DetailShop from "./pages/detail-shop";
+import DetailShop from "./pages/dashboard/detailShop/detail-shop";
 import ForgetPassword from "./pages/auth/forgetPassword";
 import { Toaster } from 'sonner'
 
